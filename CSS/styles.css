@@ -1,0 +1,13 @@
+/*GLOBALES*/
+
+html {
+    font-size: 62.5%;
+    /*1 rem = 10 px*/
+}
+
+/*PARA EL MODELO DE CAJA*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
