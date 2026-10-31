@@ -1,8 +1,80 @@
 /* VARIABLES GLOBALES */
 :root {
-    /* Paleta de Colores */
+    /* ==========================================================================
+       PALETA DE COLORES GENERALIZADA (SISTEMA DE DISEÑO)
+       IK Developers - Landing Page
+       ========================================================================== */
+
+    /* --------------------------------------------------------------------------
+       1. COLORES DE MARCA Y ACCIÓN
+       -------------------------------------------------------------------------- */
+    /* Morado principal: Botón 'Contact Us', enlaces hover, flechas slider y acentos */
+    --color-primary: #5c29a7;
+    --color-primary-hover: #481f85;
+
+    /* Azul de acción: Botón 'Let's Started' y botones de llamada a la acción */
+    --color-secondary: #3d63ea;
+    --color-secondary-hover: #2b4ec4;
+
+    /* Morado oscuro: Nombres de integrantes de equipo y clientes en testimonios */
+    --color-team-purple: #57007b;
+
+    /* Amarillo dorado: Relleno de las estrellas de valoración */
+    --color-star: #ffd73e;
+
+    /* --------------------------------------------------------------------------
+       2. TIPOGRAFÍA (COLORES DE TEXTO)
+       -------------------------------------------------------------------------- */
+    /* Texto principal: Títulos (h1, h2, h3) y texto general oscuro */
+    --color-text-general: #1a202c;
+
+    /* Texto secundario: Bajadas, descripciones, párrafos suaves y pie de página */
+    --color-text-muted: #718096;
+
+    /* Texto de encabezado secundario: Título 'Contact Us' del bloque final */
+    --color-text-heading: #525d6f;
+
+    /* Texto blanco: Botones y elementos sobre fondos oscuros */
+    --color-text-light: #ffffff;
+
+    /* --------------------------------------------------------------------------
+       3. FONDOS, ESTRUCTURA Y BORDES
+       -------------------------------------------------------------------------- */
+    /* Fondo principal blanco: Body, fondo general y tarjetas */
+    --color-body-bg: #ffffff;
+
+    /* Fondo gris suave: Tarjeta final 'Contact Us' y botones de redes sociales */
+    --color-box-bg-light: #f7f7fa;
+
+    /* Contornos y líneas divisorias de cuadros, tarjetas y separadores */
+    --color-card-border: #f3f3f3;
+
+    /* Sombra suave para elevación de tarjetas */
+    --color-card-shadow: rgba(0, 0, 0, 0.06);
+
+    /* --------------------------------------------------------------------------
+       4. DEGRADADOS DE TEXTO (HERO: 'PRODUCT' Y 'TEAMS')
+       -------------------------------------------------------------------------- */
+    /* Tonos rosa / magenta para la palabra 'Product' */
+    --color-product-1: #cd86c0;
+    --color-product-2: #be6fb6;
+    --color-product-3: #e4b1d6;
+
+    /* Tonos morado / violeta para la palabra 'Teams' */
+    --color-teams-1: #9868ba;
+    --color-teams-2: #ad68a9;
+    --color-teams-3: #a768ae;
+
+    /* Degradados aplicados al texto del Hero (background-clip: text) */
+    --gradient-text-product: linear-gradient(135deg, var(--color-product-1), var(--color-product-2), var(--color-product-3));
+    --gradient-text-teams: linear-gradient(135deg, var(--color-teams-1), var(--color-teams-2), var(--color-teams-3));
+
+    /* Barra decorativa de acento para títulos de sección */
+    --gradient-accent-bar: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
     
-    /* Tipografía */
+    /* --------------------------------------------------------------------------
+       5. TIPOGRAFÍA Y TEXTO
+       -------------------------------------------------------------------------- */
     --primary-font: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
 
     /* Tamaños de Fuente */
@@ -20,7 +92,13 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
 
-    /* Espaciados y Contenedor */
+    /* Altura de Línea (Interlineado) */
+    --line-height-heading: 1.25;         /* Títulos compactos y proporcionales (h1, h2, h3) */
+    --line-height-body: 1.6;             /* Párrafos cómodos y legibles */
+
+    /* --------------------------------------------------------------------------
+       6. ESPACIADOS Y CONTENEDOR
+       -------------------------------------------------------------------------- */
     --container-max-width: 120rem;
     --spacing-xs: 0.8rem;
     --spacing-sm: 1.6rem;
@@ -28,21 +106,46 @@
     --spacing-lg: 4.0rem;
     --spacing-xl: 6.4rem;
 
-    /* Bordes Redondeados */
-    --border-radius-image: 1.2rem;
-    --border-radius-button: 0.6rem;
+    /* --------------------------------------------------------------------------
+       7. BORDES REDONDEADOS
+       -------------------------------------------------------------------------- */
+    --border-radius-button: 0.6rem;      /* Botones de acción */
+    --border-radius-image: 1.2rem;       /* Imágenes generales */
+    --border-radius-card: 1.6rem;        /* Tarjetas de metodología, blog y testimonios */
+    --border-radius-pill: 99.9rem;       /* Etiquetas tipo píldora (categorías del blog) */
+    --border-radius-circle: 50%;         /* Círculos perfectos (avatares, flechas slider y redes sociales) */
 
-    /* Sombras */
-    --shadow-nav: 0 0.2rem 1rem rgba(0, 0, 0, 0.05);
+    /* --------------------------------------------------------------------------
+       8. SOMBRAS (ELEVACIÓN DE ELEMENTOS)
+       -------------------------------------------------------------------------- */
+    --shadow-nav: 0 0.2rem 1.0rem rgba(0, 0, 0, 0.05);          /* Barra de navegación */
+    --shadow-card: 0 0.4rem 2.0rem var(--color-card-shadow);   /* Sombra base de tarjetas y contenedores */
+    --shadow-card-hover: 0 1.0rem 3.0rem rgba(0, 0, 0, 0.12); /* Sombra elevada al pasar el cursor (hover) */
+
+    /* --------------------------------------------------------------------------
+       9. TRANSICIONES (ANIMACIONES SUAVES)
+       -------------------------------------------------------------------------- */
+    --transition-fast: all 0.2s ease;    /* Hovers rápidos: botones, enlaces y cambios de color */
+    --transition-normal: all 0.3s ease;  /* Movimientos y elevación: tarjetas y deslizamientos */
 }
 
-/*Estilos base */
+/* ==========================================================================
+   APLICACIÓN BASE
+   ========================================================================== */
+
 html {
     font-size: 62.5%; /* 1rem = 10px */
     font-family: var(--primary-font);
 }
 
-/*PARA EL MODELO DE CAJA*/
+body {
+    background-color: var(--color-body-bg);
+    color: var(--color-text-general);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+}
+
+/* PARA EL MODELO DE CAJA */
 *,
 *::after,
 *::before {
