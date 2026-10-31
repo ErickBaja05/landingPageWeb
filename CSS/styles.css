@@ -2,8 +2,6 @@
 :root {
     /* Paleta de Colores */
     
-    /* Degradados de Texto */
-
     /* Tipografía */
     --primary-font: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
 
@@ -41,7 +39,7 @@
 /*Estilos base */
 html {
     font-size: 62.5%; /* 1rem = 10px */
-    font-family: var(--font-primary);
+    font-family: var(--primary-font);
 }
 
 /*PARA EL MODELO DE CAJA*/
