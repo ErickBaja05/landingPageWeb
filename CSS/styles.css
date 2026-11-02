@@ -436,6 +436,7 @@ body {
    gap: 5rem;
    background-color: var(--color-body-bg);
    padding: 9rem;
+   border: 0.05rem solid var(--color-product-3)
 }
 
 
