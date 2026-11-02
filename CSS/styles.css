@@ -636,6 +636,7 @@ body {
 .footer-socials {
    width: 18.4rem; /* 184px */
    height: 3.4rem; /* 34px */
+   margin-top: 10rem;
    margin-left: auto;
 }
 
