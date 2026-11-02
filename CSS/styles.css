@@ -435,7 +435,7 @@ body {
    height: 45rem;
    gap: 5rem;
    background-color: var(--color-body-bg);
-   padding: 9rem;
+   padding: 35rem 9rem 35rem 9rem;
    border: 0.05rem solid var(--color-product-3)
 }
 
@@ -507,8 +507,6 @@ body {
          #B51B85 45%,
          #F04483 100%);
 }
-
-
 
 /*FIN ESTILOS ERICK */
 
