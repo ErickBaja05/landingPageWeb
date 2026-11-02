@@ -1,132 +1,348 @@
 /* VARIABLES GLOBALES */
 :root {
-    /* ==========================================================================
+   /* ==========================================================================
        PALETA DE COLORES GENERALIZADA (SISTEMA DE DISEÑO)
        IK Developers - Landing Page
        ========================================================================== */
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        1. COLORES DE MARCA Y ACCIÓN
        -------------------------------------------------------------------------- */
-    /* Morado principal: Botón 'Contact Us', enlaces hover, flechas slider y acentos */
-    --color-primary: #5c29a7;
-    --color-primary-hover: #481f85;
+   /* Morado principal: Botón 'Contact Us', enlaces hover, flechas slider y acentos */
+   --color-primary: #5c29a7;
+   --color-primary-hover: #481f85;
 
-    /* Azul de acción: Botón 'Let's Started' y botones de llamada a la acción */
-    --color-secondary: #3d63ea;
-    --color-secondary-hover: #2b4ec4;
+   /* Azul de acción: Botón 'Let's Started' y botones de llamada a la acción */
+   --color-secondary: #3d63ea;
+   --color-secondary-hover: #2b4ec4;
 
-    /* Morado oscuro: Nombres de integrantes de equipo y clientes en testimonios */
-    --color-team-purple: #57007b;
+   /* Morado oscuro: Nombres de integrantes de equipo y clientes en testimonios */
+   --color-team-purple: #57007b;
 
-    /* Amarillo dorado: Relleno de las estrellas de valoración */
-    --color-star: #ffd73e;
+   /* Amarillo dorado: Relleno de las estrellas de valoración */
+   --color-star: #ffd73e;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        2. TIPOGRAFÍA (COLORES DE TEXTO)
        -------------------------------------------------------------------------- */
-    /* Texto principal: Títulos (h1, h2, h3) y texto general oscuro */
-    --color-text-general: #1a202c;
+   /* Texto principal: Títulos (h1, h2, h3) y texto general oscuro */
+   --color-text-general: #1a202c;
 
-    /* Texto secundario: Bajadas, descripciones, párrafos suaves y pie de página */
-    --color-text-muted: #718096;
+   /* Texto secundario: Bajadas, descripciones, párrafos suaves y pie de página */
+   --color-text-muted: #718096;
 
-    /* Texto de encabezado secundario: Título 'Contact Us' del bloque final */
-    --color-text-heading: #525d6f;
+   /* Texto de encabezado secundario: Título 'Contact Us' del bloque final */
+   --color-text-heading: #525d6f;
 
-    /* Texto blanco: Botones y elementos sobre fondos oscuros */
-    --color-text-light: #ffffff;
+   /* Texto blanco: Botones y elementos sobre fondos oscuros */
+   --color-text-light: #ffffff;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        3. FONDOS, ESTRUCTURA Y BORDES
        -------------------------------------------------------------------------- */
-    /* Fondo principal blanco: Body, fondo general y tarjetas */
-    --color-body-bg: #ffffff;
+   /* Fondo principal blanco: Body, fondo general y tarjetas */
+   --color-body-bg: #ffffff;
 
-    /* Fondo gris suave: Tarjeta final 'Contact Us' y botones de redes sociales */
-    --color-box-bg-light: #f7f7fa;
+   /* Fondo gris suave: Tarjeta final 'Contact Us' y botones de redes sociales */
+   --color-box-bg-light: #f7f7fa;
 
-    /* Contornos y líneas divisorias de cuadros, tarjetas y separadores */
-    --color-card-border: #f3f3f3;
+   /* Contornos y líneas divisorias de cuadros, tarjetas y separadores */
+   --color-card-border: #f3f3f3;
 
-    /* Sombra suave para elevación de tarjetas */
-    --color-card-shadow: rgba(0, 0, 0, 0.06);
+   /* Sombra suave para elevación de tarjetas */
+   --color-card-shadow: rgba(0, 0, 0, 0.06);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        4. DEGRADADOS DE TEXTO (HERO: 'PRODUCT' Y 'TEAMS')
        -------------------------------------------------------------------------- */
-    /* Tonos rosa / magenta para la palabra 'Product' */
-    --color-product-1: #cd86c0;
-    --color-product-2: #be6fb6;
-    --color-product-3: #e4b1d6;
+   /* Tonos rosa / magenta para la palabra 'Product' */
+   --color-product-1: #cd86c0;
+   --color-product-2: #be6fb6;
+   --color-product-3: #e4b1d6;
 
-    /* Tonos morado / violeta para la palabra 'Teams' */
-    --color-teams-1: #9868ba;
-    --color-teams-2: #ad68a9;
-    --color-teams-3: #a768ae;
+   /* Tonos morado / violeta para la palabra 'Teams' */
+   --color-teams-1: #9868ba;
+   --color-teams-2: #ad68a9;
+   --color-teams-3: #a768ae;
 
-    /* Degradados aplicados al texto del Hero (background-clip: text) */
-    --gradient-text-product: linear-gradient(135deg, var(--color-product-1), var(--color-product-2), var(--color-product-3));
-    --gradient-text-teams: linear-gradient(135deg, var(--color-teams-1), var(--color-teams-2), var(--color-teams-3));
+   /* Degradados aplicados al texto del Hero (background-clip: text) */
+   --gradient-text-product: linear-gradient(135deg, var(--color-product-1), var(--color-product-2), var(--color-product-3));
+   --gradient-text-teams: linear-gradient(135deg, var(--color-teams-1), var(--color-teams-2), var(--color-teams-3));
 
-    /* Barra decorativa de acento para títulos de sección */
-    --gradient-accent-bar: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    
-    /* --------------------------------------------------------------------------
+   /* Barra decorativa de acento para títulos de sección */
+   --gradient-accent-bar: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+
+   /* --------------------------------------------------------------------------
        5. TIPOGRAFÍA Y TEXTO
        -------------------------------------------------------------------------- */
-    --primary-font: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+   --primary-font: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
 
-    /* Tamaños de Fuente */
-    --font-size-h1: 4.8rem;
-    --font-size-h2: 3.6rem;
-    --font-size-h3: 2.0rem;
-    --font-size-body: 1.6rem;
-    --font-size-small: 1.4rem;
+   /* Tamaños de Fuente */
+   --font-size-h1: 4.8rem;
+   --font-size-h2: 3.6rem;
+   --font-size-h3: 2.0rem;
+   --font-size-body: 1.6rem;
+   --font-size-small: 1.4rem;
 
-    /* Grosor de Fuente */
-    --font-weight-light: 300;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-extrabold: 800;
+   /* Grosor de Fuente */
+   --font-weight-light: 300;
+   --font-weight-regular: 400;
+   --font-weight-medium: 500;
+   --font-weight-semibold: 600;
+   --font-weight-bold: 700;
+   --font-weight-extrabold: 800;
 
-    /* Altura de Línea (Interlineado) */
-    --line-height-heading: 1.25;         /* Títulos compactos y proporcionales (h1, h2, h3) */
-    --line-height-body: 1.6;             /* Párrafos cómodos y legibles */
+   /* Altura de Línea (Interlineado) */
+   --line-height-heading: 1.25;
+   /* Títulos compactos y proporcionales (h1, h2, h3) */
+   --line-height-body: 1.6;
+   /* Párrafos cómodos y legibles */
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        6. ESPACIADOS Y CONTENEDOR
        -------------------------------------------------------------------------- */
-    --container-max-width: 120rem;
-    --spacing-xs: 0.8rem;
-    --spacing-sm: 1.6rem;
-    --spacing-md: 2.4rem;
-    --spacing-lg: 4.0rem;
-    --spacing-xl: 6.4rem;
+   --container-max-width: 120rem;
+   --spacing-xs: 0.8rem;
+   --spacing-sm: 1.6rem;
+   --spacing-md: 2.4rem;
+   --spacing-lg: 4.0rem;
+   --spacing-xl: 6.4rem;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        7. BORDES REDONDEADOS
        -------------------------------------------------------------------------- */
-    --border-radius-button: 0.6rem;      /* Botones de acción */
-    --border-radius-image: 1.2rem;       /* Imágenes generales */
-    --border-radius-card: 1.6rem;        /* Tarjetas de metodología, blog y testimonios */
-    --border-radius-pill: 99.9rem;       /* Etiquetas tipo píldora (categorías del blog) */
-    --border-radius-circle: 50%;         /* Círculos perfectos (avatares, flechas slider y redes sociales) */
+   --border-radius-button: 0.6rem;
+   /* Botones de acción */
+   --border-radius-image: 1.2rem;
+   /* Imágenes generales */
+   --border-radius-card: 1.6rem;
+   /* Tarjetas de metodología, blog y testimonios */
+   --border-radius-pill: 99.9rem;
+   /* Etiquetas tipo píldora (categorías del blog) */
+   --border-radius-circle: 50%;
+   /* Círculos perfectos (avatares, flechas slider y redes sociales) */
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        8. SOMBRAS (ELEVACIÓN DE ELEMENTOS)
        -------------------------------------------------------------------------- */
-    --shadow-nav: 0 0.2rem 1.0rem rgba(0, 0, 0, 0.05);          /* Barra de navegación */
-    --shadow-card: 0 0.4rem 2.0rem var(--color-card-shadow);   /* Sombra base de tarjetas y contenedores */
-    --shadow-card-hover: 0 1.0rem 3.0rem rgba(0, 0, 0, 0.12); /* Sombra elevada al pasar el cursor (hover) */
+   --shadow-nav: 0 0.2rem 1.0rem rgba(0, 0, 0, 0.05);
+   /* Barra de navegación */
+   --shadow-card: 0 0.4rem 2.0rem var(--color-card-shadow);
+   /* Sombra base de tarjetas y contenedores */
+   --shadow-card-hover: 0 1.0rem 3.0rem rgba(0, 0, 0, 0.12);
+   /* Sombra elevada al pasar el cursor (hover) */
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        9. TRANSICIONES (ANIMACIONES SUAVES)
        -------------------------------------------------------------------------- */
-    --transition-fast: all 0.2s ease;    /* Hovers rápidos: botones, enlaces y cambios de color */
-    --transition-normal: all 0.3s ease;  /* Movimientos y elevación: tarjetas y deslizamientos */
+   --transition-fast: all 0.2s ease;
+   /* Hovers rápidos: botones, enlaces y cambios de color */
+   --transition-normal: all 0.3s ease;
+   /* Movimientos y elevación: tarjetas y deslizamientos */
+}
+
+
+/* ==========================================================================
+   UTILIDADES
+   ========================================================================== */
+
+/* --- 1. Contenedores y Estructura --- */
+.container {
+   width: 100%;
+   max-width: var(--container-max-width);
+   margin: 0 auto;
+}
+
+
+/* --- 2. Flexbox y Alineación --- */
+.d-flex {
+   display: flex;
+}
+
+.flex-column {
+   flex-direction: column;
+}
+
+.align-center {
+   align-items: center;
+}
+
+.justify-center {
+   justify-content: center;
+}
+
+.justify-between {
+   justify-content: space-between;
+}
+
+.gap-xs {
+   gap: var(--spacing-xs);
+}
+
+.gap-sm {
+   gap: var(--spacing-sm);
+}
+
+.gap-md {
+   gap: var(--spacing-md);
+}
+
+.gap-lg {
+   gap: var(--spacing-lg);
+}
+
+/* --- 3. Tipografía y Textos --- */
+.text-center {
+   text-align: center;
+}
+
+.text-left {
+   text-align: left;
+}
+
+.text-right {
+   text-align: right;
+}
+
+.font-light {
+   font-weight: var(--font-weight-light);
+}
+
+.font-regular {
+   font-weight: var(--font-weight-regular);
+}
+
+.font-medium {
+   font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+   font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+   font-weight: var(--font-weight-bold);
+}
+
+.font-extrabold {
+   font-weight: var(--font-weight-extrabold);
+}
+
+.text-general {
+   color: var(--color-text-general);
+}
+
+.text-muted {
+   color: var(--color-text-muted);
+}
+
+.text-heading {
+   color: var(--color-text-heading);
+}
+
+.text-light {
+   color: var(--color-text-light);
+}
+
+.text-star {
+   color: var(--color-star);
+}
+
+
+/* Barra decorativa de acento sobre títulos */
+.accent-bar {
+   width: 5rem;
+   height: 0.4rem;
+   background: var(--gradient-accent-bar);
+   border-radius: var(--border-radius-pill);
+   margin-inline: auto;
+   margin-bottom: var(--spacing-sm);
+}
+
+/* --- 4. Colores de Fondo y Tarjetas --- */
+.bg-body {
+   background-color: var(--color-body-bg);
+}
+
+.bg-light {
+   background-color: var(--color-box-bg-light);
+}
+
+.card-base {
+   background-color: var(--color-body-bg);
+   border: 0.1rem solid var(--color-card-border);
+   border-radius: var(--border-radius-card);
+   box-shadow: var(--shadow-card);
+   transition: var(--transition-normal);
+}
+
+.card-base:hover {
+   box-shadow: var(--shadow-card-hover);
+}
+
+
+/* --- 5. Márgenes y Rellenos Auxiliares (Reset y Espaciados Base) --- */
+.m-0 {
+   margin: 0;
+}
+
+.mt-0 {
+   margin-top: 0;
+}
+
+.mb-0 {
+   margin-bottom: 0;
+}
+
+.mx-auto {
+   margin-inline: auto;
+}
+
+.mb-xs {
+   margin-bottom: var(--spacing-xs);
+}
+
+.mb-sm {
+   margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+   margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+   margin-bottom: var(--spacing-lg);
+}
+
+.p-0 {
+   padding: 0;
+}
+
+.p-sm {
+   padding: var(--spacing-sm);
+}
+
+.p-md {
+   padding: var(--spacing-md);
+}
+
+.p-lg {
+   padding: var(--spacing-lg);
+}
+
+/* --- 6. Elementos Multimedia --- */
+.img-fluid {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+.rounded-img {
+   border-radius: var(--border-radius-image);
+}
+
+.rounded-circle {
+   border-radius: var(--border-radius-circle);
 }
 
 /* ==========================================================================
@@ -134,20 +350,57 @@
    ========================================================================== */
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
-    font-family: var(--primary-font);
+   font-size: 62.5%;
+   /* 1rem = 10px */
+   font-family: var(--primary-font);
 }
 
 body {
-    background-color: var(--color-body-bg);
-    color: var(--color-text-general);
-    font-size: var(--font-size-body);
-    line-height: var(--line-height-body);
+   background-color: var(--color-body-bg);
+   color: var(--color-text-general);
+   font-size: var(--font-size-body);
+   line-height: var(--line-height-body);
 }
 
 /* PARA EL MODELO DE CAJA */
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
+
+
+
+/*INICIO ESTILOS FRANCIEL /*
+
+
+
+
+/*FIN ESTILOS FRANCIEL /*
+
+
+
+/*INICIO ESTILOS SABINA /*
+
+
+
+
+/*FIN ESTILOS SABINA /*
+
+
+
+/*INICIO ESTILOS ERICK /*
+
+
+
+
+/*FIN ESTILOS ERICK /*
+
+
+
+/*INICIO ESTILOS ANDRÉS /*
+
+
+
+
+/*FIN ESTILOS ANDRÉS /*
