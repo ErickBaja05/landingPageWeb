@@ -385,7 +385,7 @@ html {
 }
 
 body {
-   background-color: var(--color-box-bg-light);
+   background-color: var(--color-body-bg);
    color: var(--color-text-general);
    font-size: var(--font-size-body);
    line-height: var(--line-height-body);
