@@ -402,6 +402,45 @@ body {
 
 /*INICIO ESTILOS FRANCIEL */
 
+/* Espaciado superior e inferior para el header */
+header {
+   background-color: var(--color-body-bg);
+   box-shadow: var(--shadow-nav);
+   position: relative;
+   z-index: 10;
+   padding: var(--spacing-md) 0;
+}
+
+/* Logo */
+.title_ik {
+   font-size: 2.9rem;
+   font-weight: var(--font-weight-regular);
+   color: var(--color-text-general);
+   margin: 0;
+}
+
+/* Menú de navegación */
+.header_text {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-lg);
+}
+
+/* Enlaces del menú */
+.header_text a {
+   text-decoration: none;
+   color: var(--color-text-heading);
+   font-size: var(--font-size-body);
+   font-weight: var(--font-weight-medium);
+   transition: var(--transition-fast);
+}
+
+.header_text a:hover {
+   color: var(--color-primary);
+}
 
 
 
