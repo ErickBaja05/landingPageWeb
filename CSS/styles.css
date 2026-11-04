@@ -444,6 +444,27 @@ header {
 
 
 
+
+/* Botón Contact us */
+.contact_us {
+   background-color: var(--color-primary);
+   color: var(--color-text-light);
+   height: 4.0rem;
+   padding: 0 2.4rem;
+   border: none;
+   border-radius: var(--border-radius-button);
+   font-size: var(--font-size-small);
+   font-weight: var(--font-weight-medium);
+   cursor: pointer;
+   transition: var(--transition-fast);
+}
+
+.contact_us:hover {
+   background-color: var(--color-primary-hover);
+}
+
+
+
 /*FIN ESTILOS FRANCIEL */
 
 
