@@ -43,8 +43,96 @@
              - Slider / Cita testimonial con flechas de navegación
              - Fila de avatares con calificaciones de 5 estrellas
         ======================================================== -->
-        <section>
-            <!-- Sección de testimonios asignada a Persona 2 -->
+        <section class="testimonials text-center bg-body">
+            <!-- Flecha izquierda apegada al borde absoluto de la sección -->
+            <button class="testimonials__arrow testimonials__arrow--prev" aria-label="Anterior">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </button>
+
+            <!-- Flecha derecha apegada al borde absoluto de la sección -->
+            <button class="testimonials__arrow testimonials__arrow--next" aria-label="Siguiente">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+
+            <div class="container testimonials__container">
+                <!-- Título principal -->
+                <h2 class="testimonials__title mb-xl">
+                    Why cutomers love<br>
+                    <span class="font-bold">working with us</span>
+                </h2>
+
+                <!-- Texto con color gris sutil del Figma -->
+                <div class="testimonials__quote-wrapper mb-xl">
+                    <p class="testimonials__quote text-muted" >
+                        Without any doubt I recommend Alcaline Solutions as one of<br>
+                        the best web design and digital marketing agencies. One of<br>
+                        the best agencies I’ve came across so far. Wouldn’t be<br>
+                        hesitated to introduce their work to someone else.<br>
+                        <br>
+                    </p>
+                </div>
+
+                <!-- Tira de avatares con calificaciones -->
+                <div class="testimonials__avatars d-flex justify-around align-center">
+                    
+                    <!-- Avatar 1 -->
+                    <div class="testimonials__user">
+                        <img src="https://picsum.photos/id/342/200/200" alt="Romeena De Silva" class="testimonials__avatar rounded-circle">
+                        <div class="testimonials__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <h4 class="testimonials__name m-0">Romeena De Silva</h4>
+                        <p class="testimonials__role m-0">Janet Cosmetics</p>
+                    </div>
+
+                    <!-- Avatar 2 -->
+                    <div class="testimonials__user">
+                        <img src="https://picsum.photos/id/832/200/300" alt="Romeena De Silva" class="testimonials__avatar rounded-circle">
+                        <div class="testimonials__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <h4 class="testimonials__name m-0">Romeena De Silva</h4>
+                        <p class="testimonials__role m-0">Janet Cosmetics</p>
+                    </div>
+
+                    <!-- Avatar 3 (Principal / Activo) -->
+                    <div class="testimonials__user testimonials__user--active">
+                        <img src="https://picsum.photos/id/1/200/300" alt="Imran Khan" class="testimonials__avatar testimonials__avatar--active rounded-circle">
+                        <div class="testimonials__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <h4 class="testimonials__name m-0">Imran Khan</h4>
+                        <p class="testimonials__role m-0">Software Engineer</p>
+                    </div>
+
+                    <!-- Avatar 4 -->
+                    <div class="testimonials__user">
+                        <img src="https://picsum.photos/id/447/200/200" alt="Romeena De Silva" class="testimonials__avatar rounded-circle">
+                        <div class="testimonials__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <h4 class="testimonials__name m-0">Romeena De Silva</h4>
+                        <p class="testimonials__role m-0">Janet Cosmetics</p>
+                    </div>
+
+                    <!-- Avatar 5 -->
+                    <div class="testimonials__user">
+                        <img src="https://picsum.photos/id/453/200/200" alt="Romeena De Silva" class="testimonials__avatar rounded-circle">
+                        <div class="testimonials__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <h4 class="testimonials__name m-0">Romeena De Silva</h4>
+                        <p class="testimonials__role m-0">Janet Cosmetics</p>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <!-- ========================================================
