@@ -465,6 +465,48 @@ header {
 
 
 
+
+/* Título principal del Hero */
+.hero_title {
+   font-size: var(--font-size-h1);
+   line-height: 1.2;
+   color: var(--color-text-general);
+   margin-bottom: var(--spacing-md);
+}
+
+.hero_title-top {
+   display: block;
+   font-weight: var(--font-weight-light);
+}
+
+.hero_title-bottom {
+   display: block;
+   font-weight: var(--font-weight-extrabold);
+}
+
+/* Degradados para el texto del Hero */
+.gradient-product {
+   background: var(--gradient-text-product);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+   display: inline-block;
+   font-weight: var(--font-weight-semibold);
+}
+
+.gradient-teams {
+   background: var(--gradient-text-teams);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+   display: inline-block;
+   font-weight: var(--font-weight-extrabold);
+}
+
+
+
 /*FIN ESTILOS FRANCIEL */
 
 
