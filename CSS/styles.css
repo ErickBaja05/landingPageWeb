@@ -405,8 +405,142 @@ body {
 
 /*INICIO ESTILOS FRANCIEL */
 
+/* Espaciado superior e inferior para el header */
+header {
+   background-color: var(--color-body-bg);
+   box-shadow: var(--shadow-card);
+   position: relative;
+   z-index: 10;
+   padding: var(--spacing-md) 0;
+}
 
+/* Logo */
+.title_ik {
+   font-size: 2.9rem;
+   font-weight: var(--font-weight-light);
+   color: var(--color-text-general);
+   margin: 0;
+}
 
+/* Menú de navegación */
+.header_text {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-lg);
+}
+
+/* Enlaces del menú */
+.header_text a {
+   text-decoration: none;
+   color: var(--color-text-heading);
+   font-size: var(--font-size-body);
+   font-weight: var(--font-weight-medium);
+   transition: var(--transition-fast);
+}
+
+.header_text a:hover {
+   color: var(--color-primary);
+}
+
+/* Botón Contact us */
+.contact_us {
+   background-color: var(--color-primary);
+   color: var(--color-text-light);
+   height: 4.0rem;
+   padding: 0 2.4rem;
+   border: none;
+   border-radius: var(--border-radius-button);
+   font-size: var(--font-size-small);
+   font-weight: var(--font-weight-medium);
+   cursor: pointer;
+   transition: var(--transition-fast);
+}
+
+.contact_us:hover {
+   background-color: var(--color-primary-hover);
+}
+
+/* Sección Hero */
+.hero {
+   background-color: var(--color-body-bg);
+   padding: var(--spacing-xl) 0;
+}
+
+.hero_content {
+   max-width: 52rem;
+}
+
+/* Título principal del Hero */
+.hero_title {
+   font-size: var(--font-size-h1);
+   line-height: 1.2;
+   color: var(--color-text-general);
+   margin-bottom: var(--spacing-md);
+}
+
+.hero_title-top {
+   display: block;
+   font-weight: var(--font-weight-light);
+}
+
+.hero_title-bottom {
+   display: block;
+   font-weight: var(--font-weight-extrabold);
+}
+
+/* Degradados para el texto del Hero */
+.gradient-product {
+   background: var(--gradient-text-product);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+   display: inline-block;
+   font-weight: var(--font-weight-semibold);
+}
+
+.gradient-teams {
+   background: var(--gradient-text-teams);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+   display: inline-block;
+   font-weight: var(--font-weight-extrabold);
+}
+
+/* Descripción del Hero */
+.hero_description {
+   font-size: 1.8rem;
+   font-weight: var(--font-weight-regular);
+   color: var(--color-text-muted);
+   line-height: var(--line-height-body);
+   margin-bottom: var(--spacing-lg);
+}
+
+/* Botón Let's get started */
+.get_started {
+   background-color: var(--color-secondary);
+   color: var(--color-text-light);
+   height: 4.8rem;
+   padding: 0 3.2rem;
+   border: none;
+   border-radius: var(--border-radius-button);
+   font-size: var(--font-size-small);
+   font-weight: var(--font-weight-medium);
+   cursor: pointer;
+   box-shadow: 0 1rem 2rem rgba(61, 99, 234, 0.25);
+   transition: var(--transition-fast);
+}
+
+.get_started:hover {
+   background-color: var(--color-secondary-hover);
+   transform: translateY(-0.2rem);
+   box-shadow: 0 1.2rem 2.4rem rgba(61, 99, 234, 0.35);
+}
 
 /*FIN ESTILOS FRANCIEL */
 
